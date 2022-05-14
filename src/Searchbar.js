@@ -3,13 +3,14 @@ import React, { useState } from "react";
 const Searchbar = (props) => {
   const [userInput, setUserInput] = useState("");
   return (
-    <form onSubmit={(e) => {
-      e.preventDefault()
-      props.setSearch(userInput)
-      
-      }}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        props.setSearch(userInput);
+      }}
+    >
       <input
-        type="text"
+        type="search"
         placeholder="Search..."
         onChange={(e) => setUserInput(e.target.value)}
         value={userInput}
