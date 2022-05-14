@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./index.css";
 import Card from "./components/Cards";
 import Searchbar from "./Searchbar";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   const [search, setSearch] = useState("");
@@ -10,7 +11,7 @@ const App = () => {
 
   useEffect(() => {
     const url = new URL("https://yelpbackend.herokuapp.com/api/hospitals/");
-
+    
 
     fetch(url)
       .then((response) => {
@@ -26,15 +27,18 @@ const App = () => {
 
   if (!hospitals) return <h1>Loading...</h1>
   return (
+    <>
     <div className="App">
-      {/* <NavBar /> */}
+      <NavBar />
       <Searchbar setSearch={setSearch} />
       <div className="hospital-card">
-        {hospitalData.map((element, index) => (
+        {hospitals.map((element, index) => (
           <Card hospitals={element} key={element.id} index={index}/>
         ))}
       </div>
     </div>
+    </>
+
   );
 };
 
