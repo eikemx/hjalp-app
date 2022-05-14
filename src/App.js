@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
+
 import Card from "./components/Cards";
 import Searchbar from "./Searchbar";
 import NavBar from "./components/NavBar";
@@ -31,13 +32,23 @@ const App = () => {
   return (
     <>
     <div className="App">
+
+     <div className="nav-bar">
       <NavBar />
+    </div>
       <Searchbar setSearch={setSearch} />
       <div className="hospital-card">
         {hospitals.map((element, index) => (
           <Card hospitals={element} key={element._id} index={index}/>
         ))}
-      </div>
+          <div className="searchbar">
+            <Searchbar setSearch={setSearch} />
+          </div>
+        <div className="hospital-card">
+          {hospitals.map((element, index) => (
+            <Card hospitals={element} key={element.id} index={index}/>
+          ))}
+        </div>
     </div>
     </>
 
