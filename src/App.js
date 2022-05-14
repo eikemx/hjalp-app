@@ -10,8 +10,10 @@ const App = () => {
   const [hospitals, setHospitals] = useState()
 
   useEffect(() => {
-    const url = new URL("https://yelpbackend.herokuapp.com/api/hospitals/");
-    
+    let url = `https://yelpbackend.herokuapp.com/api/hospitals`;
+    if (search) {
+      url += `/search/${search}`
+    }
 
     fetch(url)
       .then((response) => {
@@ -22,7 +24,7 @@ const App = () => {
       })
       .then((data) => {setHospitals(data)
       ;});
-  }, []);
+  }, [search]);
 
 
   if (!hospitals) return <h1>Loading...</h1>
@@ -33,7 +35,7 @@ const App = () => {
       <Searchbar setSearch={setSearch} />
       <div className="hospital-card">
         {hospitals.map((element, index) => (
-          <Card hospitals={element} key={element.id} index={index}/>
+          <Card hospitals={element} key={element._id} index={index}/>
         ))}
       </div>
     </div>
