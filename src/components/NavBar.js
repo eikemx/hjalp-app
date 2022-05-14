@@ -1,6 +1,7 @@
 import hjalpLogo from "../images/hjalp-logo.png";
 
-function Navbar() {
+function Navbar({handleLogoClick}) {
+
   return (
     <header>
       <div className="App-Header">
@@ -12,8 +13,10 @@ function Navbar() {
             Sign up
           </button>
         </div>
-        <div className="Logo-Block">
-          <img className="logo" src={hjalpLogo} alt="logo" />
+        <div className="Logo-Block" onClick={handleLogoClick}>
+          <a className="image-link" href="/" >
+            <img className="logo" href="/" src={hjalpLogo} alt="logo" />
+          </a>
         </div>
       </div>
     </header>

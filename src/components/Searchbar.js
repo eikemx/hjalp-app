@@ -1,16 +1,18 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"
 
 const Searchbar = (props) => {
   const [userInput, setUserInput] = useState("");
+  const navigate = useNavigate()
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        props.setSearch(userInput);
-      }}
-    >
+    <form onSubmit={(e) => {
+      e.preventDefault()
+      props.setSearch(userInput)
+      navigate(`/hospitals/${userInput}`)
+      
+      }}>
       <input
-        type="search"
+        type="text"
         placeholder="Search..."
         onChange={(e) => setUserInput(e.target.value)}
         value={userInput}
