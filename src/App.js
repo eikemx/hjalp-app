@@ -14,10 +14,13 @@ const App = () => {
   const [hospitals, setHospitals] = useState()
 
   useEffect(() => {
-    const url = new URL("https://yelpbackend.herokuapp.com/api/hospitals/");
-    // https://yelpbackend.herokuapp.com/api/hospitals/
     
     setIsLoading(true);
+    let url = `https://yelpbackend.herokuapp.com/api/hospitals`;
+    if (search) {
+      url += `/search/${search}`
+    }
+
     fetch(url)
       .then((response) => {
         if (!response.ok) {
@@ -33,7 +36,7 @@ const App = () => {
         setIsLoading(false);
         setIsError(true);
       });
-  }, []);
+  }, [search]);
 
   if (isError) {
     return <Error />;
@@ -44,9 +47,10 @@ const App = () => {
   return (
     <>
     <div className="App">
-    
-      <div className="nav-bar">
-        <NavBar />
+
+
+     <div className="nav-bar">
+      <NavBar />
       </div>
           <div className="searchbar">
             <Searchbar setSearch={setSearch} />
