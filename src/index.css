@@ -29,11 +29,10 @@ body {
   width: 20%;
 }
 
-.Logo-Block {
-  padding-top: 6em;
+a.image-link {
+  padding-top: 3em;
   display: flex;
   justify-content: center;
-  
 }
 
 .searchbar {
@@ -59,7 +58,7 @@ body {
 
 .card-header:first-child {
   background-color: #fde2ed;
-  margin-top: 0.2rem;
+  margin: 0.2rem;
   border-radius: var(--border-radius);
 }
 
@@ -87,7 +86,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .hospital-card {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 1rem 5rem;
   }
   .logo {
