@@ -2,20 +2,20 @@ import React from "react";
 
 const Card = (props) => {
 
-    console.log(props.hospitals);
+    // console.log(props.hospitals);
 
     return (
     <>
         <div className="container">
             <div className="row">
                 <div className="card">
-                    <div className="card-header">Name</div>
+                    <div className="card-header">{props.hospitals.name}</div>
                         <div className="card-body">
-                            <p className="card-text">Adress:</p>
-                            <a href="#" className="card-link">Card link</a>
+                            <p className="card-text">{props.hospitals.description}</p>
+                            <p className="card-text">{props.hospitals.address}</p>
+                            <p className="card-text">{props.hospitals.city}</p>
                         </div>
-                        <div className="card-footer text-muted">date</div>
-                </div>
+                 </div>
             </div>
         </div>
     </> 
