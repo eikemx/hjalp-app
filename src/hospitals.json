@@ -1,101 +1,98 @@
-{
-    "data": 
-    [
-        {
-            "id": "1",
-            "name": "Waldkrankenhaus",
-            "address": "Friedrischshtrasse 13",
-            "city": "Berlin",
-            "tags": [
-                {
-                    "id": "1001",
-                    "name": "children's hospital"
-                },
-                {
-                    "id": "1002",
-                    "name": "Dental clinic"
-                }
-            ],
-            "description": "Discription regarding the following krankenhaus",
-            "comments": [
-                {
-                    "id": "101",
-                    "content": "The comment 101 goes here",
-                    "createAt": "2022-03-12T12:30:06.504Z"
-                },
-                {
-                    "id": "102",
-                    "content": "The comment 102 goes here",
-                    "createAt": "2022-03-12T12:30:06.504Z"
-                }
-            ]
-        },
-      {
-            "id": "2",
-            "name": "City Clinic",
-            "address": "Unter den Linden 107",
-            "city": "Berlin",
-            "tags": [
-                {
-                    "id": "2001",
-                    "name": "children's hospital"
-                },
-                {
-                    "id": "2002",
-                    "name": "Dental clinic"
-                },
-                {
-                    "id": "2003",
-                    "name": "Dental clinic"
-                }
-            ],
-            "description": "Discription regarding the following City Clinic",
-            "comments": [
-                {
-                    "id": "201",
-                    "content": "The comment 201 goes here",
-                    "createAt": "2022-04-12T12:30:06.504Z"
-                },
-                {
-                    "id": "202",
-                    "content": "The comment 202 goes here",
-                    "createAt": "2022-01-16ST12:30:06.504Z"
-                },
-                {
-                    "id": "203",
-                    "content": "The comment 203 goes here",
-                    "createAt": "2022-05-24T12:30:06.504Z"
-                }
-            ]
+[
+    {
+        "id": "1",
+        "name": "Waldkrankenhaus",
+        "address": "Friedrischshtrasse 13",
+        "city": "Berlin",
+        "tags": [
+            {
+                "id": "1001",
+                "name": "children's hospital"
+            },
+            {
+                "id": "1002",
+                "name": "Dental clinic"
+            }
+        ],
+        "description": "Discription regarding the following krankenhaus",
+        "comments": [
+            {
+                "id": "101",
+                "content": "The comment 101 goes here",
+                "createAt": "2022-03-12T12:30:06.504Z"
+            },
+            {
+                "id": "102",
+                "content": "The comment 102 goes here",
+                "createAt": "2022-03-12T12:30:06.504Z"
+            }
+        ]
     },
-      {
-            "id": "3",
-            "name": "Sana Clinic",
-            "address": "KriegerStrasse 22",
-            "city": "Stuttgart",
-            "tags": [
-                {
-                    "id": "3001",
-                    "name": "rheumatology"
-                },
-                {
-                    "id": "3002",
-                    "name": "Dental clinic"
-                }
-            ],
-            "description": "Discription regarding the following Sana Clinic",
-            "comments": [
-                {
-                    "id": "301",
-                    "content": "The comment 301 goes here",
-                    "createAt": "2022-04-12T12:30:06.504Z"
-                },
-                {
-                    "id": "302",
-                    "content": "The comment 302 goes here",
-                    "createAt": "2022-12-12T12:30:06.504Z"
-                }
-            ]
-        }
-    ]
-}
+  {
+        "id": "2",
+        "name": "City Clinic",
+        "address": "Unter den Linden 107",
+        "city": "Berlin",
+        "tags": [
+            {
+                "id": "2001",
+                "name": "children's hospital"
+            },
+            {
+                "id": "2002",
+                "name": "Dental clinic"
+            },
+            {
+                "id": "2003",
+                "name": "Dental clinic"
+            }
+        ],
+        "description": "Discription regarding the following City Clinic",
+        "comments": [
+            {
+                "id": "201",
+                "content": "The comment 201 goes here",
+                "createAt": "2022-04-12T12:30:06.504Z"
+            },
+            {
+                "id": "202",
+                "content": "The comment 202 goes here",
+                "createAt": "2022-01-16ST12:30:06.504Z"
+            },
+            {
+                "id": "203",
+                "content": "The comment 203 goes here",
+                "createAt": "2022-05-24T12:30:06.504Z"
+            }
+        ]
+},
+  {
+        "id": "3",
+        "name": "Sana Clinic",
+        "address": "KriegerStrasse 22",
+        "city": "Stuttgart",
+        "tags": [
+            {
+                "id": "3001",
+                "name": "rheumatology"
+            },
+            {
+                "id": "3002",
+                "name": "Dental clinic"
+            }
+        ],
+        "description": "Discription regarding the following Sana Clinic",
+        "comments": [
+            {
+                "id": "301",
+                "content": "The comment 301 goes here",
+                "createAt": "2022-04-12T12:30:06.504Z"
+            },
+            {
+                "id": "302",
+                "content": "The comment 302 goes here",
+                "createAt": "2022-12-12T12:30:06.504Z"
+            }
+        ]
+    }
+]

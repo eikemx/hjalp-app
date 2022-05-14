@@ -25,12 +25,15 @@ const App = () => {
 
 
   if (!hospitals) return <h1>Loading...</h1>
-
   return (
     <div className="App">
-      <header>hjálp</header>
+      {/* <NavBar /> */}
       <Searchbar setSearch={setSearch} />
-      <Card />
+      <div className="hospital-card">
+        {hospitalData.map((element, index) => (
+          <Card hospitals={element} key={element.id} index={index}/>
+        ))}
+      </div>
     </div>
   );
 };
