@@ -1,22 +1,38 @@
-import React from 'react';
-
-import './index.css';
-
-import hospitals from "./hospitals.json";
-
-import Card from './components/Cards';
-
+import React, { useState, useEffect } from "react";
+import "./index.css";
+import Card from "./components/Cards";
+import Searchbar from "./Searchbar";
 
 const App = () => {
+  const [search, setSearch] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [hospitals, setHospitals] = useState()
+
+  useEffect(() => {
+    const url = new URL("https://yelpbackend.herokuapp.com/api/hospitals/");
 
 
+    fetch(url)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Random 404");
+        }
+        return response.json();
+      })
+      .then((data) => {setHospitals(data)
+      ;});
+  }, []);
+
+
+  if (!hospitals) return <h1>Loading...</h1>
 
   return (
     <div className="App">
       <header>hjálp</header>
-      <Card/>
+      <Searchbar setSearch={setSearch} />
+      <Card />
     </div>
   );
-}
+};
 
 export default App;
