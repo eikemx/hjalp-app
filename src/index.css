@@ -1,7 +1,7 @@
 :root {
   --main-font-size: 12px;
-  --secondary-font-size: 10px;
-  --border-radius: 8p
+  --secondary-font-size: 10 px;
+  --border-radius: 8p;
 }
 
 body {
@@ -68,6 +68,23 @@ body {
   padding: 0.3rem;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+.error-img {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
   .hospital-card {
     flex-direction: column;
@@ -75,5 +92,16 @@ body {
   }
   .logo {
     width: 40%;
+  }
+  .card {
+    width: 70%;
+    justify-content: center;
+  }
+  .hospital-card {
+    margin: 0 auto;
+  }
+
+  .error-message {
+    font-size: 15px;
   }
 }
