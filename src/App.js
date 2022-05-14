@@ -1,22 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './index.css';
 
-import hospitals from "./hospitals.json";
+import hospitalData from "./hospitals.json";
 
 import Card from './components/Cards';
-
+// import NavBar from "./components/NavBar";
 
 const App = () => {
 
-
+  console.log(hospitalData);
 
   return (
     <div className="App">
-      <header>hjálp</header>
-      <Card/>
+      {/* <NavBar /> */}
+      <div className="hospital-card">
+        {hospitalData.map((element, index) => (
+          <Card hospitals={element} key={element.id} index={index}/>
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
