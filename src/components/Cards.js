@@ -2,8 +2,6 @@ import React from "react";
 
 const Card = (props) => {
 
-    // console.log(props.hospitals);
-
     return (
     <>
                 <div className="card">

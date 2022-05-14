@@ -1,13 +1,8 @@
 :root {
-  --main-font-size: 10px;
-  --secondary-font-size: 8px;
-  --border-radius: 8px;
+  --main-font-size: 12px;
+  --secondary-font-size: 10px;
+  --border-radius: 8p
 }
-
-/* * {
-  max-width: 700px;
-  margin: 0 auto;
-} */
 
 body {
   background-color: aquamarine;
@@ -15,29 +10,48 @@ body {
 
 .Navbar-Buttons {
   margin-top: 2em;
+  margin-right: 1rem;
   text-align: right;
   overflow: hidden;
 }
 
+.btn-dark {
+  background-color: #1f322a;
+}
+
+.btn-primary {
+  background-color: 	#9ff2fb;
+  color: #1f322a;
+  margin-right: 0.5rem;
+}
+
 .logo {
-  width: 40%
+  width: 20%;
 }
 
 .Logo-Block {
   padding-top: 6em;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
 }
 
 .hospital-card {
   display: flex;
   justify-content: center;
+  margin: 1rem 10rem;
 }
 
 .card {
   display: flex;
   justify-content: space-between;
   font-size: var(--main-font-size);
-  width: 15%;
+  width: 20%;
   margin: 0.5rem;
   border-radius: var(--border-radius);
   border: 1px solid #fb9fc4;
@@ -52,4 +66,14 @@ body {
 .card-body {
   font-size: var(--secondary-font-size);
   padding: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hospital-card {
+    flex-direction: column;
+    margin: 1rem 5rem;
+  }
+  .logo {
+    width: 40%;
+  }
 }
