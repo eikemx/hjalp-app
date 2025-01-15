@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Hjálp - A Yelp Clone for Hospitals
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+Hjálp is a Yelp-inspired hospital search application built during a 8-hour hackathon. The challenge was to recreate Yelp's core functionality, specifically focused on helping users find and review hospitals and medical facilities. While the backend is no longer available, the project demonstrates the successful implementation of Yelp-like features in a healthcare context.
 
-## Available Scripts
+## Features
+- Hospital search functionality (similar to Yelp's business search)
+- Detailed hospital information cards (inspired by Yelp's business cards)
+- Responsive design for various screen sizes
+- Error handling for API failures
+- Loading state management
+- Navigation with React Router
+- Hospital tags and categories
 
-In the project directory, you can run:
+## Technologies Used
+- React.js
+- React Router
+- Bootstrap
+- CSS for custom styling
+- JavaScript ES6+
+- Create React App
+- Spinners React for loading animations
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+- Node.js
+- npm
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/hjalp-app.git
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Start the development server
+   ```bash
+   npm start
+   ```
+   Note: The application will open at [http://localhost:3000](http://localhost:3000), but will display an error page as the backend service is no longer available.
 
-### `npm test`
+## Project Structure
+```bash
+hjalp-app/
+├── src/
+│ ├── components/
+│ │ ├── Cards.js
+│ │ ├── Error.js
+│ │ ├── HospitalPage.js
+│ │ ├── HospitalsWrapper.js
+│ │ ├── LoadingSpinner.js
+│ │ ├── NavBar.js
+│ │ └── Searchbar.js
+│ ├── images/
+│ ├── App.js
+│ └── index.js
+├── public/
+└── README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Current Status
+This project was created during a hackathon where teams were challenged to recreate Yelp's functionality. Our team focused on adapting Yelp's interface for hospital search and reviews. Unfortunately, the backend service (previously hosted at yelpbackend.herokuapp.com) is no longer available, which means the application cannot fetch hospital data. The frontend code remains as a demonstration of our implementation of Yelp-like features.
 
-### `npm run build`
+## Learning Outcomes
+- Adapting existing business models (Yelp) to new use cases
+- Building React applications with multiple components
+- Implementing error handling and loading states
+- Working with external APIs
+- Using React Router for navigation
+- Responsive design implementation
+- Collaborative development in a hackathon setting
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contact
+- GitHub: [@eikemx](https://github.com/eikemx)
+- LinkedIn: [Eike Merx](https://www.linkedin.com/in/eike-merx-50b111216/)
+- XING: [Eike Merx](https://www.xing.com/profile/Eike_Merx/web_profiles)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Acknowledgments
+- WBS Coding School
+- Backend team members
+- Yelp for inspiration
+- All contributors to the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+*This project was created as part of a 8-hour hackathon challenge to recreate Yelp's functionality for hospital search.*
