@@ -3,6 +3,10 @@
 ## Project Overview
 Hjálp is a Yelp-inspired hospital search application built during a 8-hour hackathon. The challenge was to recreate Yelp's core functionality, specifically focused on helping users find and review hospitals and medical facilities. While the backend is no longer available, the project demonstrates the successful implementation of Yelp-like features in a healthcare context.
 
+## Live Demo
+The project is deployed and can be viewed at [https://hjalp.netlify.app/](https://hjalp.netlify.app/)
+Note: As mentioned in the Current Status section, the backend service is no longer available, so the live demo will display the error handling implementation.
+
 ## Features
 - Hospital search functionality (similar to Yelp's business search)
 - Detailed hospital information cards (inspired by Yelp's business cards)
