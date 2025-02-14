@@ -5,7 +5,8 @@ Hjálp is a Yelp-inspired hospital search application built during a 8-hour hack
 
 ## Live Demo
 The project is deployed and can be viewed at [https://hjalp.netlify.app/](https://hjalp.netlify.app/)
-Note: As mentioned in the Current Status section, the backend service is no longer available, so the live demo will display the error handling implementation.
+
+**Note:** As mentioned in the Current Status section, the backend service is no longer available, so the live demo will display the error handling implementation.
 
 ## Features
 - Hospital search functionality (similar to Yelp's business search)
@@ -44,20 +45,13 @@ Note: As mentioned in the Current Status section, the backend service is no long
    ```bash
    npm start
    ```
-   Note: The application will open at [http://localhost:3000](http://localhost:3000), but will display an error page as the backend service is no longer available.
+   **Note:** The application will open at [http://localhost:3000](http://localhost:3000), but will display an error page as the backend service is no longer available.
 
 ## Project Structure
 ```bash
 hjalp-app/
 ├── src/
 │ ├── components/
-│ │ ├── Cards.js
-│ │ ├── Error.js
-│ │ ├── HospitalPage.js
-│ │ ├── HospitalsWrapper.js
-│ │ ├── LoadingSpinner.js
-│ │ ├── NavBar.js
-│ │ └── Searchbar.js
 │ ├── images/
 │ ├── App.js
 │ └── index.js
@@ -66,7 +60,7 @@ hjalp-app/
 ```
 
 ## Current Status
-This project was created during a hackathon where teams were challenged to recreate Yelp's functionality. Our team focused on adapting Yelp's interface for hospital search and reviews. Unfortunately, the backend service (previously hosted at yelpbackend.herokuapp.com) is no longer available, which means the application cannot fetch hospital data. The frontend code remains as a demonstration of our implementation of Yelp-like features.
+This project was created during a hackathon where teams were challenged to recreate Yelp's functionality. Our team focused on adapting Yelp's interface for hospital search and reviews. Unfortunately, the backend service (previously hosted at [yelpbackend.herokuapp.com](https://yelpbackend.herokuapp.com/)) is no longer available, which means the application cannot fetch hospital data. The frontend code remains as a demonstration of our implementation of Yelp-like features.
 
 ## Learning Outcomes
 - Adapting existing business models (Yelp) to new use cases
